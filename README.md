@@ -1,6 +1,6 @@
 # CLEAN-Contact
 
-This repository contains the code and data for the paper "CLEAN-Contact: Contrastive Learning-enabled Enzyme Functional Annotation Prediction with Structural Inference".
+This repository contains the code and data for the paper "[Improved enzyme functional annotation prediction using contrastive learning with structural inference](https://www.nature.com/articles/s42003-024-07359-z)".
 
 ## Introduction
 CLEAN-Contact requires protein sequences and structures as input. The sequence inputs can be CSV or FASTA files. The 
@@ -178,4 +178,21 @@ To train models with the other combinations (`contact_1` and `contact_2`), modif
 ```bash
 ./train-split100-reduced-resnet50-esm2-2560-contact_1-triplet.sh
 ./train-split100-reduced-resnet50-esm2-2560-contact_2-triplet.sh
+```
+
+## Citations
+
+Please cite the following paper if you used the data and models provided in this repo:
+
+```bibtex
+@article{yang2024improved,
+  title={Improved enzyme functional annotation prediction using contrastive learning with structural inference},
+  author={Yang, Yuxin and Jerger, Abby and Feng, Song and Wang, Zixu and Brasfield, Christina and Cheung, Margaret S and Zucker, Jeremy and Guan, Qiang},
+  journal={Communications Biology},
+  volume={7},
+  number={1},
+  pages={1690},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
 ```
